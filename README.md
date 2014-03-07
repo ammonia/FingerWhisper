@@ -35,8 +35,11 @@ PHP & HTML
 ### login.php
 ### talk.php
 ### room.php
-
+To see people in the circle
 ### leave.php
 Delete your information in circle and connect your pre and your next to keep the circle smooth, and clear session.
 
 The CSS and JS always drive me crazy. 
+
+TODO
+----
