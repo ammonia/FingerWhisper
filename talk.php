@@ -102,6 +102,9 @@ else {
         else if($t < 3600) {
             echo intval($t/60).' min ago.</span></div>';
         }
+        else {
+            echo intval($t/3600).' h ago.</span></div>';
+        }
     }
 }
 
