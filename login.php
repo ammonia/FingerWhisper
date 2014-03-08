@@ -33,7 +33,6 @@ if(isset($_POST['room']) && $_POST['room'] != '') {
     }
 
     // Check whether input a name (Anonymous is illegal)
-    $peoplename = '';
     $peoplename = str_replace(' ','',$_POST['people']);
     if($peoplename != '' && $peoplename != 'Anonymous') {
         $_SESSION['peoplename'] = $peoplename;
@@ -61,6 +60,7 @@ if(isset($_POST['room']) && $_POST['room'] != '') {
         }
     }
     else {  // did not input a name, use Anonymous for him
+        $peoplename = 'Anonymous';
         $insert_sql = "insert into people values ();";
         $insert_people = mysql_query($insert_sql);
         $_SESSION['peopleid'] = mysql_insert_id();
